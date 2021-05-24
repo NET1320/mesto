@@ -9,7 +9,7 @@
 </head>
 
 <body class="page">
-    <div class="page-container">
+    <div class="page__container">
 
         <header class="header">
             <img class="header__logo" src="./images/logo.svg" alt="логотип страницы Место">
@@ -26,9 +26,9 @@
                             <h1 class="profile__name">Жак-Ив Кусто</h1>
                             <p class="profile__description">Исследователь океана</p>
                         </div>
-                        <button class="profile__edit" aria-label="Кнопка редактирования профиля"></button>
+                        <button class="profile__edit" type = "button" aria-label="Кнопка редактирования профиля"></button>
                     </div>
-                    <button class="profile__add" aria-label="Кнопка добавления информации в профиль"></button>
+                    <button class="profile__add" type = "button" aria-label="Кнопка добавления информации в профиль"></button>
                 </div>
             </section>
 
@@ -37,7 +37,7 @@
                     <img class="place__image" src="./images/abu-dhabi-gettyimages-487888511_1.jpg" alt="Мечеть шейха Зайда в Абу-Даби">
                     <div class="place__content">
                         <h2 class="place__title">Абу-Даби</h2>
-                        <button class="place__like" aria-label="Кнопка like"></button>
+                        <button class="place__like" type = "button" aria-label="Кнопка like"></button>
                     </div>
                 </article>
 
@@ -45,7 +45,7 @@
                     <img class="place__image" src="./images/cape-town-gettyimages-471380295.jpg" alt="Побережье Кейптауна">
                     <div class="place__content">
                         <h2 class="place__title">Кейптаун</h2>
-                        <button class="place__like" aria-label="Кнопка like"></button>
+                        <button class="place__like" type = "button" aria-label="Кнопка like"></button>
                     </div>
                 </article>
 
@@ -53,7 +53,7 @@
                     <img class="place__image" src="./images/hbz-pamukkale-gettyimages-466129341-1505338681.jpg" alt="Термальные источники из белого известняка в Памуккале">
                     <div class="place__content">
                         <h2 class="place__title">Памуккале</h2>
-                        <button class="place__like" aria-label="Кнопка like"></button>
+                        <button class="place__like" type = "button" aria-label="Кнопка like"></button>
                     </div>
                 </article>
 
@@ -61,7 +61,7 @@
                     <img class="place__image" src="./images/hbz-venice-gettyimages-489741024-1505338894.jpg" alt="">
                     <div class="place__content">
                         <h2 class="place__title">Венеция</h2>
-                        <button class="place__like" aria-label="Кнопка like"></button>
+                        <button class="place__like" type = "button" aria-label="Кнопка like"></button>
                     </div>
                 </article>
 
@@ -69,7 +69,7 @@
                     <img class="place__image" src="./images/marrakech-gettyimages-152834676.jpg" alt="Гранд-канал Венеции">
                     <div class="place__content">
                         <h2 class="place__title">Марракеш</h2>
-                        <button class="place__like" aria-label="Кнопка like"></button>
+                        <button class="place__like" type = "button" aria-label="Кнопка like"></button>
                     </div>
                 </article>
 
@@ -77,7 +77,7 @@
                     <img class="place__image" src="./images/gallery-gettyimages-159582943-1.jpg" alt="Вид на побережье Амальфи">
                     <div class="place__content">
                         <h2 class="place__title">Побережье Амальфи</h2>
-                        <button class="place__like" aria-label="Кнопка like"></button>
+                        <button class="place__like" type = "button" aria-label="Кнопка like"></button>
                     </div>
                 </article>
                 </section>
@@ -87,17 +87,17 @@
             <p class="footer__copyright">© 2020 Mesto Russia</p>
         </footer>
 
-        <section class="popup">
+        <div class="popup">
             <div class="popup__container">
-                <button class="popup__close" aria-label="Кнопка закрытия popup"></button>
+                <button class="popup__close" type = "button" aria-label="Кнопка закрытия popup"></button>
                 <h2 class="popup__title">Редактировать профиль</h2>
-                <form class="popup__edit-form">
-                    <input class="popup__fieldset-name" type="text" value="Жак-Ив Кусто">
-                    <input class="popup__fieldset-description" type="text" value="Исследователь океана">
-                    <button class="popup__save" aria-label="Кнопка сохранения изменений">Сохранить</button>
+                <form class="popup__edit-form" name="editForm">
+                    <input class="popup__input popup__input_fieldset_name" type="text" required name ="name" value ="Жак-Ив Кусто">
+                    <input class="popup__input popup__input_fieldset_description" type="text" required name = "profession" value = "Исследователь океана">
+                    <button class="popup__save" type = "submit" aria-label="Кнопка сохранения изменений">Сохранить</button>
                 </form>
             </div>
-        </section>
+        </div>
     </div>
     <script src="./scripts/script.js"></script>
 </body>

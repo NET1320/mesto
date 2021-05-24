@@ -2,23 +2,25 @@ let popup = document.querySelector('.popup');
 let popupOpenButton = document.querySelector('.profile__edit');
 let popupCloseButton = document.querySelector('.popup__close');
 let formElement = document.querySelector('.popup__edit-form');
-let nameInput = formElement.querySelector('.popup__fieldset-name');
-let jobInput = formElement.querySelector('.popup__fieldset-description');
+let nameInput = formElement.querySelector('.popup__input_fieldset_name');
+let jobInput = formElement.querySelector('.popup__input_fieldset_description');
 let profileName = document.querySelector('.profile__name');
 let profileDescription = document.querySelector('.profile__description');
 
-popupOpenButton.addEventListener('click', function () {
+function popupOpened () {
     popup.classList.add('popup_opened');
-})
+}
+popupOpenButton.addEventListener('click', popupOpened);
 
-popupCloseButton.addEventListener('click', function () {
+function popupClosed () {
     popup.classList.remove('popup_opened')
-})
+}
+popupCloseButton.addEventListener('click', popupClosed);
 
 function formSubmitHandler (evt) {
     evt.preventDefault();
     profileName.textContent = nameInput.value;
     profileDescription.textContent = jobInput.value;
+    popupClosed ();
 }
-
 formElement.addEventListener('submit', formSubmitHandler); 

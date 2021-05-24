@@ -8,6 +8,6 @@
 
 @media screen and (max-width: 1023px) {
     .profile__content {
-    padding-top: 26px;
+        padding-top: 26px;
     }
 }
