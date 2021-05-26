@@ -1,5 +1,5 @@
 .profile__description {
-    color:white; 
+    color:white;
     font-size: 18px;
     line-height: 22px;
     padding-top: 16px;
@@ -11,10 +11,10 @@
     } 
      
 @media screen and (max-width: 1023px) { 
-    .profile__description { 
+    .profile__description {
         font-size: 14px;
         line-height: 17px;
         text-align: center;
         max-width: 189px;
-        } 
+        }
     }
