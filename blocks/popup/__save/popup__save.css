@@ -5,7 +5,7 @@
     background-color: black;
     color: white;
     border-radius: 2px;
-    height: 50px;
+    padding: 14px 125px;
     margin-top: 18px;
     cursor: pointer;
     border: 0;
@@ -19,5 +19,6 @@
     .popup__save {
         font-size: 14px;
         line-height: 17px;
+        padding: 14px 82px;
     }
 }

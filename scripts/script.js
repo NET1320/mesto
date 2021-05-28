@@ -9,11 +9,14 @@ let profileDescription = document.querySelector('.profile__description');
 
 function popupOpened () {
     popup.classList.add('popup_opened');
+    nameInput.value = profileName.textContent;
+    jobInput.value = profileDescription.textContent;
 }
 popupOpenButton.addEventListener('click', popupOpened);
 
 function popupClosed () {
-    popup.classList.remove('popup_opened')
+    popup.classList.remove('popup_opened');
+    form.formElement(reset);
 }
 popupCloseButton.addEventListener('click', popupClosed);
 
