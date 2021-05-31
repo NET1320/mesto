@@ -16,7 +16,7 @@ popupOpenButton.addEventListener('click', popupOpened);
 
 function popupClosed () {
     popup.classList.remove('popup_opened');
-    form.formElement(reset);
+    formElement.reset;
 }
 popupCloseButton.addEventListener('click', popupClosed);
 
